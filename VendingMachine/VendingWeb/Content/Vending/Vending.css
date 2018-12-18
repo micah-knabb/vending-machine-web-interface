@@ -1,0 +1,57 @@
+﻿.debug{
+    /*border: solid red;*/
+}
+
+.customContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+}
+
+.itemImage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: auto;
+}
+
+#feedBackImage{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#itemContainer {
+}
+
+.inventoryColumn{
+}
+
+#controlPanel{
+    margin: auto;
+}
+#controlPanel>div{
+    margin-top: 10px;
+}
+#balance{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#statusBox{
+}
+
+.vendingItem{
+    min-width: 150px;
+    margin: 10px 0px 10px 10px;
+}
+
+.cantClick{
+    background-color: tomato;
+}
+
+.cardss{
+    font-size: 35px;
+}

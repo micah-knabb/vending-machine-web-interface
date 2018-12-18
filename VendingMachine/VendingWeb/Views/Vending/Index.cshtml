@@ -1,0 +1,44 @@
+﻿@section StyleSheet {
+    <link rel="stylesheet" href="~/Content/Vending/Vending.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+}
+
+@section Scripts {
+    <script src="~/Scripts/Vending/Vending.js" defer></script>
+}
+
+@section Title {
+    Vending
+}
+
+<div class="customContainer container justify-content-center debug">
+    <div id="" class="container">
+        <div  id="itemContainer" class="row justify-content-center">
+        </div>
+    </div>
+
+
+    <div id="controlPanel" class="debug text-center">
+        <div class="dropdown dropright">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,20">
+                Feed Bill
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a id="1bill" class="dropdown-item">$1</a>
+                <a id="5bill" class="dropdown-item">$5</a>
+                <a id="10bill" class="dropdown-item">$10</a>
+            </div>
+        </div>
+        <div class="balance">
+            <h1 id="balance" class="display-4">$0.00</h1>
+        </div>
+        <button id="change" type="button" class="btn btn-primary">Return Change</button>
+        <div id="statusBox" class="card text-center" style="width: 18rem;">
+            <i id="feedBackImage" class="fas far fa-smile fa-5x text-center card-img-top debug"></i>
+            <div class="card-body">
+                <h5 id="feedBackStatus" class="card-title">Hi</h5>
+                <p id="feedBackMessage" class="card-text">Welcome to VNDR.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿.logHeading {
+    text-align: center;
+    padding-bottom: 10px;
+    display:block;
+}
+.headerRow {
+    
+    font-weight: bold;
+    border-bottom: solid black;
+}
+.row:nth-child(2n+1) {
+    background-color: lightsteelblue;
+}
+.logTitle {
+    display: inline-block;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+#logBox{
+    margin-top: 15px;
+    margin-bottom:50px;
+    border: solid black;
+}
+#logType{
+    display: inline-block;
+}

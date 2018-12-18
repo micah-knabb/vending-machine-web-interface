@@ -1,0 +1,97 @@
+﻿@using VendingWeb.Controllers
+@using VendingService.Models
+@using VendingService
+@{
+    var vm = Session[VendingBaseController.VendingMachineKey] as VendingMachine;
+    string login = "Login";
+    if (vm.CurrentUser != null)
+    {
+        login = "Logout - " + vm.CurrentUser.FirstName + " " + vm.CurrentUser.LastName + " (" + vm.Role.RoleName.ToString() + ")";
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Vending/Site.css" rel="stylesheet" type="text/css" />
+    @RenderSection("StyleSheet", false)
+
+    <script src="~/Scripts/Vending/Global.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js" defer></script>
+    <script src="~/Scripts/jquery.validate.js" defer></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.js " defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js" defer></script>
+    @RenderSection("Scripts", false)
+
+    <title>@RenderSection("Title", true)</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="jumbotron jumbotron-fluid jumboMove">
+            <div class="container">
+                <h1 class="display-4">VNDR.</h1>
+                <p class="lead motto">GIVE US YOUR CASH, WE'LL GIVE YOU SOME FOOD</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand VNDR" href="~/Vending/Index"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        @if (vm.Role.IsExecutive || vm.Role.IsCustomer || vm.Role.IsServiceman || vm.Role.IsAdministrator)
+                        {
+                            <li class="nav-item active homeNav">
+                                <a class="nav-link" href="~/Vending/Index">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                        }               
+                        @if (vm.Role.IsExecutive)
+                        {
+                            <li class="nav-item reportNav">
+                                <a class="nav-link" href="~/Vending/Report">Report</a>
+                            </li>
+                            <li class="nav-item logNav">
+                                <a class="nav-link" href="~/Vending/Log">Log</a>
+                            </li>
+                        }
+
+                        @if (vm.Role.IsServiceman)
+                        {
+                            <li class="nav-item modifyNav">
+                                <a class="nav-link" href="~/Vending/Modify">Restock</a>
+                            </li>
+                        }
+                        @if (!vm.Role.IsUnknown)
+                        {
+                            <li class="nav-item aboutNav">
+                                <a class="nav-link" href="~/Vending/About">About</a>
+                            </li>
+                        }
+                            </ul>
+                        @if (!vm.Role.IsUnknown)
+                        {
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item reportNav">
+                                    <a class="nav-link" href="~/User/Login/">@login</a>
+                                </li>
+                            </ul>
+                        }
+                </div>
+            </div>
+        </nav>
+        <section>
+            @RenderBody()
+        </section>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        Tech Elevator Copyright 2018
+    </div>
+</body>
+</html>

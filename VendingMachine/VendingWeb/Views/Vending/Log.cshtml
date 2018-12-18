@@ -1,0 +1,45 @@
+﻿@section StyleSheet {
+    <link rel="stylesheet" href="~/Content/Vending/Log.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+}
+
+@section Scripts {
+    <script src="~/Scripts/Vending/Log.js" defer></script>
+
+}
+
+@section Title {
+    Log
+}
+
+
+<div class="container" id="logBox">
+    <div class="logHeading">
+        <div class="logTitle">Log</div>
+        <div>
+            <select id="logType">
+                <option value="all">All Transactions</option>
+                <option value="feed">Feed Money</option>
+                <option value="giveChange">Give Change</option>
+                <option value="purchaseItem">Purchases</option>
+            </select>
+        </div>
+    </div>
+    <div class="row headerRow">
+
+        <div class="col-sm-1"></div>
+        <div class="col-3 content">
+            Date
+        </div>
+        <div class="col-4 transaction content">
+            Action
+        </div>
+        <div class="col-2 amount content">
+            Amt
+        </div>
+        <div class="col-1 runnTotal content">
+            Total
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@section StyleSheet {
+    <link rel="stylesheet" href="~/Content/Vending/Report.css" />
+}
+
+@section Scripts {
+    <script src="~/Scripts/Vending/Report.js" defer></script>
+}
+
+@section Title {
+    Report
+}
+@using VendingService.Models
+@model List<UserItem>
+@{ 
+     int currYear = DateTime.Now.Year;
+    //int currYear = 2023;
+}
+
+    <div class="container" id="reportBox">
+
+        <div class="reportHeading">
+            <div class="reportTitle">Total Sales Report</div>
+            <select id="reportYear">
+                @for(int i = currYear; i >= 2018; i--)
+                {
+                    <option value=@i>@i</option>
+                }
+            </select>
+            <div class="User Selection">
+                <select id="users">
+                    <option value="all">All Users</option>
+                    @for(int i = 0; i < Model.Count; i++)
+                    {
+                        <option value="@(Model[i].Id)">@(Model[i].FirstName) @(Model[i].LastName)</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="row headerRow">
+
+            <div class="col-sm-3"></div>
+            <div class="col content">
+                Product
+            </div>
+            <div class="col qtySold content">
+                Qty Sold
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+    </div>

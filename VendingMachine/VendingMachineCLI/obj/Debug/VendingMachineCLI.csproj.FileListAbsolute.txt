@@ -1,0 +1,10 @@
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\bin\Debug\VendingMachineCLI.exe.config
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\bin\Debug\VendingMachineCLI.exe
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\bin\Debug\VendingMachineCLI.pdb
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\bin\Debug\VendingService.dll
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\bin\Debug\VendingService.pdb
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\obj\Debug\VendingMachineCLI.csprojAssemblyReference.cache
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\obj\Debug\VendingMachineCLI.csproj.CoreCompileInputs.cache
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\obj\Debug\VendingMachineCLI.csproj.CopyComplete
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\obj\Debug\VendingMachineCLI.exe
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingMachineCLI\obj\Debug\VendingMachineCLI.pdb

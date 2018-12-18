@@ -1,0 +1,54 @@
+﻿/*#reportBox{
+    display:block;
+}
+.productName, .qtySold{
+    display:inline-block;
+}
+.reportLine{
+    display:block;
+}*/
+.qtySold{
+    text-align:center;
+    vertical-align:middle;
+}
+.headerRow{
+    font-size:large;
+    font-weight:bold;
+    border-bottom: solid black;
+}
+.salesRow {
+    border-top: solid black;
+    font-size: large;
+    font-weight: bold;
+}
+#reportBox{
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: solid black;
+}
+.reportHeading{
+    display: block;
+    font-size:larger;
+    text-align:center;
+    font-weight:bold;
+    margin: 10px;
+}
+
+.row:nth-child(2n+1){
+    background-color:lightsteelblue;
+}
+.row:last-child{
+    background-color:white;
+}
+.reportTitle, .reportYear{
+    display:inline-block;
+}
+.reportYear{
+    margin-left:15px;
+}
+#reportBox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+

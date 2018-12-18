@@ -1,0 +1,13 @@
+﻿.modifyHeading {
+    border: solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.selectItem {
+    padding-bottom: 10px;
+}
+.modifyTitle {
+    justify-content: center;
+    font-weight: bold;
+    padding: 15px;
+}

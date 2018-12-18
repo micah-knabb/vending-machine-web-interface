@@ -1,0 +1,6 @@
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\bin\Debug\VendingService.dll
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\bin\Debug\VendingService.pdb
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\obj\Debug\VendingService.csprojAssemblyReference.cache
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\obj\Debug\VendingService.csproj.CoreCompileInputs.cache
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\obj\Debug\VendingService.dll
+C:\Workspace\Team\vending-machine-upgrade\VendingMachine\VendingService\obj\Debug\VendingService.pdb
